@@ -1,0 +1,13 @@
+name = "sirv-upload"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+# Optionally restrict to specific origins (comma-separated)
+# ALLOWED_ORIGINS = "https://yoursite.com,https://app.yoursite.com"
+
+# Secrets (set via `wrangler secret put`):
+# - SIRV_CLIENT_ID
+# - SIRV_CLIENT_SECRET
+#
+# Get these from: https://my.sirv.com/#/account/settings/api

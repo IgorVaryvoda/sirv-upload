@@ -1,0 +1,26 @@
+{
+  "name": "sirv-upload",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "typescript": "^5.0.0",
+    "wrangler": "^3.99.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "SIRV_CLIENT_ID": {
+        "description": "API Client ID from [Sirv Dashboard → Settings → API](https://my.sirv.com/#/account/settings/api)."
+      },
+      "SIRV_CLIENT_SECRET": {
+        "description": "API Client Secret from [Sirv Dashboard → Settings → API](https://my.sirv.com/#/account/settings/api)."
+      }
+    }
+  }
+}
